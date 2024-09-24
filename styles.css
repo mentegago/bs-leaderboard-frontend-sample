@@ -1,0 +1,170 @@
+body {
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1F1F1F;
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.leaderboard {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.leaderboard-table-container {
+    overflow-x: auto;
+}
+
+.leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ensure table is wider than mobile screens */
+}
+
+.leaderboard th, .leaderboard td {
+    padding: 10px;
+    text-align: left;
+}
+
+.leaderboard th {
+    background-color: #1F1F1F;
+    border-bottom: 1px solid #333;
+}
+
+.leaderboard tr:nth-child(even) {
+    background-color: #1A1A1A;
+}
+
+.leaderboard tr:hover {
+    background-color: #333;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.player-name {
+    color: #BB86FC;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.player-name:hover {
+    text-decoration: underline;
+}
+
+.player-details {
+    display: none;
+    background-color: #1A1A1A;
+}
+
+.player-details td {
+    padding: 0;
+    border: none;
+}
+
+.player-scores-container {
+    padding: 20px;
+}
+
+.scores-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.scores-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.force-fetch-button {
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.force-fetch-button:hover {
+    background-color: #9b67db;
+}
+
+.scores-table-container {
+    overflow-x: auto;
+}
+
+.scores-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 800px; /* Ensure table is wider than mobile screens */
+}
+
+.scores-table th, .scores-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.scores-table th {
+    background-color: #1F1F1F;
+}
+
+.scores-table tr:nth-child(even) {
+    background-color: #1A1A1A;
+}
+
+.song-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.message {
+    text-align: center;
+    margin: 20px auto;
+    color: #BB86FC;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .leaderboard table {
+        min-width: 600px;
+    }
+
+    .scores-table {
+        min-width: 800px;
+    }
+
+    .scores-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .force-fetch-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
